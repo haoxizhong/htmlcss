@@ -1,0 +1,59 @@
+/* basic styles >=992*/
+
+h1 {
+	text-align : center;
+}
+
+.div1,.div2,.div3 {
+	float : left;
+	width : 30%;
+	position : relative;
+	overflow : auto;
+	padding : 10px;
+	border : 2px solid black;
+	margin : 10px;
+	background-color : gray;
+}
+
+div.head1,div.head2,div.head3{
+	position : absolute;
+	top : 0px;
+	right : 0px;
+	padding: 10px;
+}
+
+.head1 {
+	background-color : pink;
+}
+
+.head2 {
+	background-color : red;
+	color : white;
+}
+
+.head3 {
+	background-color : yellow;
+}
+
+
+/* medium styles 768-991*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.div1 , .div2{
+		width : 40%;
+	}
+	.div2 {
+		clear : right;
+	}
+	.div3 {
+		width : 80%;
+	}
+}
+
+/* small styles <=767*/
+
+@media (max-width: 767px) {
+	.div1 , .div2 , .div3 {
+		float : none;
+		width : 80%;
+	}
+}
